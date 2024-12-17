@@ -1,0 +1,23 @@
+{
+  "name": "cars-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Cars-Dealership/cars-monorepo.git",
+  "author": "moses mwangi <moses.mwangi.me@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:admin": "yarn workspace cars-admin run dev",
+    "dev:collection": "yarn workspace cars-collection run dev",
+    "dev:all": "yarn dev:admin & yarn dev:collection"
+  },
+  "dependencies": {
+    "@types/lodash.add": "^3.7.9",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "lodash": "^4.17.21"
+  }
+}

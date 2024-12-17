@@ -1,0 +1,14 @@
+# Ignore node_modules in all apps
+node_modules/
+# /node_modules
+
+# Yarn lock files
+yarn.lock
+
+
+# Logs
+*.log
+
+# Build output
+dist/
+build/
