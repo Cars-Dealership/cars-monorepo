@@ -1,0 +1,32 @@
+# name: Deploy Backend to Pipeline
+
+# on:
+#   push:
+#     branches:
+#       - main # Trigger deployment on push to the 'main' branch
+
+# jobs:
+#   deploy-backend:
+#     runs-on: ubuntu-latest # Runner environment
+
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v3 # Checkout the repository
+
+#       - name: Set up Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: "16"
+
+#       - name: Install dependencies
+#         run: yarn install
+
+#       - name: Deploy Backend to Pipeline
+#         run: |
+#           # Replace with your pipeline deploy command
+#           # For example, if you're using Docker or a custom pipeline CLI:
+#           # docker build -t my-backend .
+#           # docker push my-backend
+
+#           # Assuming you're using a custom CLI to deploy, e.g., 'my-pipeline-cli'
+#           my-pipeline-cli deploy --token ${{ secrets.PIPELINE_TOKEN }} --service car_database

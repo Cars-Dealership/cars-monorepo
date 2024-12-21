@@ -1,0 +1,27 @@
+{
+  "name": "cars-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Cars-Dealership/cars-monorepo.git",
+  "author": "moses mwangi <moses.mwangi.me@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  },
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.9"
+  },
+  "packageManager": "yarn@1.22.22"
+}
