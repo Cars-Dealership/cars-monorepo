@@ -1,11 +1,14 @@
 import React from "react";
+import NavbaPage from "./components/navbar/navbat";
+import Hero from "./components/hero_section/Hero";
+import TestRedux from "./components/TestRedux";
 
 export default function Home() {
   return (
     <div>
-      <h1 className=" font-bold text-2xl text-yellow-500">
-        This is a Car Collection Home Page
-      </h1>
+      <NavbaPage />
+      <Hero />
+      <TestRedux />
     </div>
   );
 }
